@@ -8,6 +8,7 @@ let computerChoice;
 let userScore = 0;
 let computerScore = 0;
 let isGameOver = false;
+
 play.addEventListener('click', () => {
     if(userChoice !== ""){
       showResult();
@@ -138,18 +139,18 @@ function setIsGameOver(){
 
 function borderBottom(weapon) {
   if (weapon === "rock") {
-    document.querySelector('#rock').style.borderBottom = '3px solid #487346'
+    document.querySelector('#rock').style.borderBottom = '3px solid #FFF'
     document.querySelector('#paper').style.borderBottom = '3px solid transparent'
     document.querySelector('#scissors').style.borderBottom = '3px solid transparent'
   }
   if (weapon === "paper") {
     document.querySelector('#rock').style.borderBottom = '3px solid transparent'
-    document.querySelector('#paper').style.borderBottom = '2px solid #487346'
+    document.querySelector('#paper').style.borderBottom = '2px solid #FFF'
     document.querySelector('#scissors').style.borderBottom = '3px solid transparent'
   }
   if (weapon === "scissors") {
     document.querySelector('#rock').style.borderBottom = '3px solid transparent'
     document.querySelector('#paper').style.borderBottom = '3px solid transparent'
-    document.querySelector('#scissors').style.borderBottom = '2px solid #487346'
+    document.querySelector('#scissors').style.borderBottom = '2px solid #FFF'
   }
 }
